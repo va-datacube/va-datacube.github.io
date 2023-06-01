@@ -1,0 +1,26 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "User Documentation"
+    url: user-docs/index
+  - title: "VMASC VA Data Cube  \u2197"
+    url: https://datacube.online/
+docs:
+  - title: Getting Started
+    children:
+      - title: "Sign-Up for an Account"
+        url: user-docs/sign-up
+      - title: "Request Account"
+        url: user-docs/request-account
+      - title: "Data Cube Products and Datasets"
+        url: user-docs/dc-products-datasets
+  - title: Using VA Data Cube
+    children:
+      - title: "Shared Directory Usage"
+        url: user-docs/shared-directory-usage
+  - title: Open Data Cube Resources
+    children:
+      - title: "Python API \u2197"
+        url: https://datacube-core.readthedocs.io/en/latest/api/index.html
+      - title: "ODC Jupyter Notebook Examples \u2197"
+        url: https://datacube-core.readthedocs.io/en/latest/data-access-analysis/tools-exploring-data/using-juypter.html
