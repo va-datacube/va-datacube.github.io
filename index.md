@@ -16,7 +16,7 @@ feature_row:
   - image_path: images/pexels-pixabay-261763.jpg
     alt: "User Documentation"
     title: "User Documentation"
-    excerpt: "User documentation for the VMASC Virginia Data Cube."
+    excerpt: "User documentation and sign-up information for the VMASC Virginia Data Cube."
     url: user-docs/index
     btn_label: "Go To"
     btn_class: "btn--primary"
@@ -39,6 +39,14 @@ feature_row6:
     alt: "sat"
     title: "VMASC Virginia Data Cube - AWS Cloud"
     excerpt: "The VMASC Virginia Data Cube is currently hosted on AWS Cloud and has the ability to quickly scale up/down based on project requirements."
+feature_row7:
+  - image_path: images/NASA-Logo.png
+    alt: "sat"
+    title: "Supported by NASA AIST-21 grant 'Pixels for Public Health'"
+    excerpt: "Along with supporting the VMASC Virginia Open Data Cube, the 'Pixels for Public Health' grant is developng digital twin technologies for building healthy, resilient, and equitable communities. You can find out more about the initiative at the link below."
+    url: "https://pixels-for-public-health-digital-twin-odu-gis.hub.arcgis.com"
+    btn_label: "Read more"
+    btn_class: "btn--primary"
 ---
 
 {% include feature_row id="intro" type="center" %}
@@ -61,8 +69,8 @@ feature_row6:
 
 {% include feature_row id="feature_row5" type="right" %}
 
-<!--{% include feature_row id="feature_row3" type="center" %}-->
 
 {% include feature_row id="feature_row6" type="left" %}
 
+{% include feature_row id="feature_row7" type="center" %}
 > **NOTE:** The Virginia Data Cube is undergoing constant upgrades and maintenance. If you are having issues acccessing please email [Datacube@odu.edu](mailto:datacube@odu.edu>)
