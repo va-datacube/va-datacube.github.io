@@ -52,7 +52,11 @@ feature_row7:
 {% include feature_row id="intro" type="center" %}
 
 <h1 style="text-align:center">Welcome to the VMASC Virginia Open Data Cube Hub!</h1>
+
+
+>  &#33; &#33; The Data Cube team is aware of user notebook access issue and are working to resolve ASAP. Thank you. &#33; &#33; 
   
+
 <p style="text-align:center">
   The VMASC VA Data Cube is a powerful geospatial analytical tool that aids in managing and organizing imagery data with its respective time series data for easier analysis. The VA Data Cube capabilities can be utilized to provide insight and information for future-focused environmental, economic, or public health decisions based on past data, or a multitude of other problem solving possibilities. </p>
 
