@@ -54,7 +54,7 @@ feature_row7:
 <h1 style="text-align:center">Welcome to the VMASC Virginia Open Data Cube Hub!</h1>
 
 
->  &#33; &#33; The Data Cube team is aware of user notebook access issue and are working to resolve ASAP. Thank you. &#33; &#33; 
+> **Important Note:** Users who created an account before August 2023 will have to sign-up again due to infrastructure changes. If you have data or notebooks on your previous account that wish to transfer, please email **datacube@odu.edu**
   
 
 <p style="text-align:center">
