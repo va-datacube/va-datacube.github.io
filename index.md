@@ -47,6 +47,14 @@ feature_row7:
     url: "https://pixels-for-public-health-digital-twin-odu-gis.hub.arcgis.com"
     btn_label: "Read more"
     btn_class: "btn--primary"
+feature_row8:
+  - image_path: images/pexels-fire.jpg
+    alt: "sat"
+    title: "Virginia Fire Susceptibility Index"
+    excerpt: "Virginia Tech's Fire Susceptibility Index models wildfire risks with geospatial data using the power of the Virginia Open Data Cube."
+    url: "assets/pdfs/VSDC_FSI_Data_Cube.pdf"
+    btn_label: "Read more"
+    btn_class: "btn--primary"
 ---
 
 {% include feature_row id="intro" type="center" %}
@@ -77,4 +85,6 @@ feature_row7:
 {% include feature_row id="feature_row6" type="left" %}
 
 {% include feature_row id="feature_row7" type="center" %}
+
+{% include feature_row id="feature_row8" type="right" %}
 > **NOTE:** The Virginia Data Cube is undergoing constant upgrades and maintenance. If you are having issues acccessing please email [Datacube@odu.edu](mailto:datacube@odu.edu>)
