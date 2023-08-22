@@ -1,5 +1,5 @@
 ---
-title: Install Python Packages
+title: Install Python Package(s)
 layout: single
 sidebar:
   nav: "docs"
