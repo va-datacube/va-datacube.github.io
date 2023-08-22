@@ -18,7 +18,7 @@ docs:
     children:
       - title: "Shared Directory Usage"
         url: user-docs/shared-directory-usage
-      - title: "Install Python Packages"
+      - title: "Install Python Package(s)"
         url: user-docs/install-py-packages
   - title: Open Data Cube Resources
     children:
