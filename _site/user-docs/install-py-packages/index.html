@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Request a VMASC Virginia Data Cube Account - VMASC Virginia Data Cube</title>
+<!-- begin _includes/seo.html --><title>Install Python Packages - VMASC Virginia Data Cube</title>
 <meta name="description" content="">
 
 
@@ -20,8 +20,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="VMASC Virginia Data Cube">
-<meta property="og:title" content="Request a VMASC Virginia Data Cube Account">
-<meta property="og:url" content="http://localhost:4000/user-docs/request-account/">
+<meta property="og:title" content="Install Python Packages">
+<meta property="og:url" content="http://localhost:4000/user-docs/install-py-packages/">
 
 
 
@@ -39,7 +39,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/user-docs/request-account/">
+<link rel="canonical" href="http://localhost:4000/user-docs/install-py-packages/">
 
 
 
@@ -216,7 +216,7 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Request a VMASC Virginia Data Cube Account">
+    <meta itemprop="headline" content="Install Python Packages">
     
     
     
@@ -225,7 +225,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/user-docs/request-account/" class="u-url" itemprop="url">Request a VMASC Virginia Data Cube Account
+            <a href="http://localhost:4000/user-docs/install-py-packages/" class="u-url" itemprop="url">Install Python Packages
 </a>
           </h1>
           
@@ -236,19 +236,35 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>Requesting an account is required if a users email domain is not apart of our whitelist.</p>
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#step-1-open-jupyter-terminal">Step 1: Open Jupyter Terminal</a></li><li><a href="#step-2-install-python-packages">Step 2: Install Python Package(s)</a></li></ul>
 
-<p>The following email domains are apart of the VMASC Virginia Data Cube whitelist:</p>
+            </nav>
+          </aside>
+        
+        <p>The VMASC VA Data Cube environment contains many geospatial python packages required for analysis but there may be some you need that we don’t have. If there is a package you need, simply launch a terminal within the Data Cube and install any package using pip.</p>
 
-<ul>
-  <li>odu.edu</li>
-  <li>ama-inc.com</li>
-  <li>jlab.org</li>
-  <li>vbgov.com</li>
-  <li>nasa.gov</li>
-</ul>
+<h2 id="step-1-open-jupyter-terminal">Step 1: Open Jupyter Terminal</h2>
 
-<p><strong>To request an account or to add your organizations domain to the whitelist please email <a href="mailto:datacube@odu.edu&gt;">Datacube@odu.edu</a></strong></p>
+<ol>
+  <li>Navigate to <a href="https://datacube.online">VMASC VA Open Data Cube</a>.</li>
+  <li>Once open, from the <strong>Launcher</strong>, select <strong>Terminal</strong> to open a new terminal window within the Data Cube.</li>
+</ol>
+
+<p><img src="http://localhost:4000/images/launch-terminal.png" alt="image-center" class="align-center" /></p>
+
+<h2 id="step-2-install-python-packages">Step 2: Install Python Package(s)</h2>
+
+<p>With the terminal launched, install python package(s).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>numpy
+</code></pre></div></div>
+<blockquote>
+  <p>The package(s) installed will be local to your user on the Data Cube and not accessible by others.</p>
+</blockquote>
+
 
         
       </section>

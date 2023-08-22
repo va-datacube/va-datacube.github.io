@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Request a VMASC Virginia Data Cube Account - VMASC Virginia Data Cube</title>
+<!-- begin _includes/seo.html --><title>Install Python Packages - VMASC Virginia Data Cube</title>
 <meta name="description" content="">
 
 
@@ -20,8 +20,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="VMASC Virginia Data Cube">
-<meta property="og:title" content="Request a VMASC Virginia Data Cube Account">
-<meta property="og:url" content="http://localhost:4000/user-docs/request-account/">
+<meta property="og:title" content="Install Python Packages">
+<meta property="og:url" content="http://localhost:4000/user-docs/create-conda-env/">
 
 
 
@@ -39,7 +39,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/user-docs/request-account/">
+<link rel="canonical" href="http://localhost:4000/user-docs/create-conda-env/">
 
 
 
@@ -216,7 +216,7 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Request a VMASC Virginia Data Cube Account">
+    <meta itemprop="headline" content="Install Python Packages">
     
     
     
@@ -225,7 +225,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/user-docs/request-account/" class="u-url" itemprop="url">Request a VMASC Virginia Data Cube Account
+            <a href="http://localhost:4000/user-docs/create-conda-env/" class="u-url" itemprop="url">Install Python Packages
 </a>
           </h1>
           
@@ -236,19 +236,78 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>Requesting an account is required if a users email domain is not apart of our whitelist.</p>
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#creating-a-conda-data-cube-environment">Creating a Conda Data Cube Environment</a><ul><li><a href="#step-1-open-jupyter-terminal">Step 1: Open Jupyter Terminal</a></li><li><a href="#step-2-create-a-conda-environment">Step 2: Create a Conda Environment</a></li><li><a href="#step-3-activate-the-new-environment">Step 3: Activate the New Environment</a></li><li><a href="#step-4-install-additional-packages">Step 4: Install Additional Packages</a></li><li><a href="#step-6-deactivating-the-environment">Step 6: Deactivating the Environment</a></li></ul></li><li><a href="#resources">Resources</a></li></ul>
 
-<p>The following email domains are apart of the VMASC Virginia Data Cube whitelist:</p>
+            </nav>
+          </aside>
+        
+        <h1 id="creating-a-conda-data-cube-environment">Creating a Conda Data Cube Environment</h1>
+
+<p>This guide will walk you through the process of creating a new Conda environment for Data Cube analysis that requires additonal python packages not installed on the VMASC VA Data Cube.</p>
+
+<h2 id="step-1-open-jupyter-terminal">Step 1: Open Jupyter Terminal</h2>
+
+<ol>
+  <li>Navigate to <a href="https://datacube.online">VMASC VA Open Data Cube</a>.</li>
+  <li>Once open, from the <strong>Launcher</strong>, select <strong>Terminal</strong> to open a new terminal window within the Data Cube.</li>
+</ol>
+
+<h2 id="step-2-create-a-conda-environment">Step 2: Create a Conda Environment</h2>
+
+<p>In the Terminal, you will now create a new Conda environment based on the existing base environment.</p>
+
+<ol>
+  <li>
+    <p>To create a new Conda environment based on the Data Cube base environment, use the following command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create <span class="nt">--name</span> myenv <span class="nt">--clone</span> base
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>After executing, the command will take a minute or two to clone, download, and extract all packages from the base enviornment for your newly created one.</p>
+
+<blockquote>
+  <p>You will be notified two packages that could not be cloned, mamba and conda which are not needed for Data Cube anaylysis.</p>
+</blockquote>
+
+<h2 id="step-3-activate-the-new-environment">Step 3: Activate the New Environment</h2>
+
+<ol>
+  <li>
+    <p>Once the environment is created, you need to activate it. Use the following command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> conda activate myenv
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>After activation, your terminal prompt should change to indicate that you are now working within the myenv environment.</p>
+  </li>
+</ol>
+
+<h2 id="step-4-install-additional-packages">Step 4: Install Additional Packages</h2>
+
+<p>With your new Conda environment activated, you can install additional packages that are specific to your needs. For example:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>numpy pandas matplotlib
+</code></pre></div></div>
+
+<h2 id="step-6-deactivating-the-environment">Step 6: Deactivating the Environment</h2>
+
+<p>When you’re done working in your Conda environment, you can deactivate it to return to the base environment:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda deactivate
+</code></pre></div></div>
+
+<h1 id="resources">Resources</h1>
 
 <ul>
-  <li>odu.edu</li>
-  <li>ama-inc.com</li>
-  <li>jlab.org</li>
-  <li>vbgov.com</li>
-  <li>nasa.gov</li>
+  <li><a href="https://conda.io">Conda.io</a></li>
+  <li><a href="https://docs.conda.io/projects/conda/en/stable/commands/index.html">Conda Command reference</a></li>
 </ul>
-
-<p><strong>To request an account or to add your organizations domain to the whitelist please email <a href="mailto:datacube@odu.edu&gt;">Datacube@odu.edu</a></strong></p>
 
         
       </section>
