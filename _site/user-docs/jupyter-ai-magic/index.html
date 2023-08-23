@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>How to Use the Shared Directory in JupyterHub - VMASC Virginia Data Cube</title>
+<!-- begin _includes/seo.html --><title>Jupyter AI - VMASC Virginia Data Cube</title>
 <meta name="description" content="">
 
 
@@ -20,8 +20,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="VMASC Virginia Data Cube">
-<meta property="og:title" content="How to Use the Shared Directory in JupyterHub">
-<meta property="og:url" content="http://localhost:4000/user-docs/shared-directory-usage/">
+<meta property="og:title" content="Jupyter AI">
+<meta property="og:url" content="http://localhost:4000/user-docs/jupyter-ai-magic/">
 
 
 
@@ -39,7 +39,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/user-docs/shared-directory-usage/">
+<link rel="canonical" href="http://localhost:4000/user-docs/jupyter-ai-magic/">
 
 
 
@@ -218,7 +218,7 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="How to Use the Shared Directory in JupyterHub">
+    <meta itemprop="headline" content="Jupyter AI">
     
     
     
@@ -227,7 +227,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/user-docs/shared-directory-usage/" class="u-url" itemprop="url">How to Use the Shared Directory in JupyterHub
+            <a href="http://localhost:4000/user-docs/jupyter-ai-magic/" class="u-url" itemprop="url">Jupyter AI
 </a>
           </h1>
           
@@ -241,54 +241,96 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#accessing-the-shared-directory">Accessing the Shared Directory</a><ul><li><a href="#virginia-data-cube-shared-directories">Virginia Data Cube Shared Directories</a></li></ul></li><li><a href="#uploading-files-to-the-shared-directory">Uploading Files to the Shared Directory</a></li><li><a href="#collaborating-on-files-in-the-shared-directory">Collaborating on Files in the Shared Directory</a></li></ul>
+              <ul class="toc__menu"><li><a href="#jupyter-ai-magic---model-providers">Jupyter AI Magic - Model Providers</a><ul><li><a href="#jupyter-ai-magic---set-up-model-providors-in-notebook">Jupyter AI Magic - Set up Model Providors in Notebook</a></li></ul></li><li><a href="#jupyter-ai-magic-command-usage">Jupyter AI Magic Command Usage</a></li></ul>
 
             </nav>
           </aside>
         
-        <p>JupyterHub is a multi-user platform that allows users to work collaboratively on data science projects. One of the features that makes JupyterHub particularly useful for collaboration is the shared directory, which allows users to share files and data with one another.</p>
+        <p>Thanks to the wonderful team at Project Jupyter, AI chat models are now accessible from within Jupyter Notebooks. This capability has been made available within VMASC VA Data Cube Jupyter Notebooks with the <a href="https://pypi.org/project/jupyter-ai-magics/">jupyter-ai-magics</a> package and is relatively new so if you run into any issues please don’t hesitate to contact the Data Cube team at <strong>Datacube@odu.edu</strong>.</p>
 
-<h3 id="accessing-the-shared-directory">Accessing the Shared Directory</h3>
+<h2 id="jupyter-ai-magic---model-providers">Jupyter AI Magic - Model Providers</h2>
 
-<p>To access the shared directory in JupyterHub:</p>
+<p>Jupyter AI supports a wide range of model providers and models. To use Jupyter AI with a particular provider, you must install its Python packages and set its API key (or other credentials) in your environment.</p>
 
-<ol>
-  <li>Log in to JupyterHub using your username and password.</li>
-  <li>Once you are logged in, you will see the JupyterHub dashboard.</li>
-  <li>Click on the “Files” tab in the dashboard.</li>
-  <li>You will see a list of directories, including the shared directory. Click on the shared directory to open it.</li>
-</ol>
+<p>Jupyter AI supports the following model providers:</p>
 
-<h4 id="virginia-data-cube-shared-directories">Virginia Data Cube Shared Directories</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Provider</th>
+      <th>Provider ID</th>
+      <th>Environment variable</th>
+      <th>Python package(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AI21</td>
+      <td><code class="language-plaintext highlighter-rouge">ai21</code></td>
+      <td><code class="language-plaintext highlighter-rouge">AI21_API_KEY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ai21</code></td>
+    </tr>
+    <tr>
+      <td>Anthropic</td>
+      <td><code class="language-plaintext highlighter-rouge">anthropic</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ANTHROPIC_API_KEY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">anthropic</code></td>
+    </tr>
+    <tr>
+      <td>Bedrock</td>
+      <td><code class="language-plaintext highlighter-rouge">amazon-bedrock</code></td>
+      <td>N/A</td>
+      <td><code class="language-plaintext highlighter-rouge">boto3</code></td>
+    </tr>
+    <tr>
+      <td>Cohere</td>
+      <td><code class="language-plaintext highlighter-rouge">cohere</code></td>
+      <td><code class="language-plaintext highlighter-rouge">COHERE_API_KEY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">cohere</code></td>
+    </tr>
+    <tr>
+      <td>Hugging Face Hub</td>
+      <td><code class="language-plaintext highlighter-rouge">huggingface_hub</code></td>
+      <td><code class="language-plaintext highlighter-rouge">HUGGINGFACEHUB_API_TOKEN</code></td>
+      <td><code class="language-plaintext highlighter-rouge">huggingface_hub</code>, <code class="language-plaintext highlighter-rouge">ipywidgets</code>, <code class="language-plaintext highlighter-rouge">pillow</code></td>
+    </tr>
+    <tr>
+      <td>OpenAI</td>
+      <td><code class="language-plaintext highlighter-rouge">openai</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OPENAI_API_KEY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">openai</code></td>
+    </tr>
+    <tr>
+      <td>OpenAI (chat)</td>
+      <td><code class="language-plaintext highlighter-rouge">openai-chat</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OPENAI_API_KEY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">openai</code></td>
+    </tr>
+    <tr>
+      <td>SageMaker</td>
+      <td><code class="language-plaintext highlighter-rouge">sagemaker-endpoint</code></td>
+      <td>N/A</td>
+      <td><code class="language-plaintext highlighter-rouge">boto3</code></td>
+    </tr>
+  </tbody>
+</table>
 
-<p>The shared directory includes two subdirectories that may be useful for your work: <code class="language-plaintext highlighter-rouge">examples</code> and <code class="language-plaintext highlighter-rouge">research-notebooks</code>.</p>
+<h3 id="jupyter-ai-magic---set-up-model-providors-in-notebook">Jupyter AI Magic - Set up Model Providors in Notebook</h3>
 
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">examples</code>: This directory contains example Jupyter notebooks that demonstrate different data analysis techniques and tools. These examples can help you get started with your own data analysis projects or provide guidance as you explore new methods.</li>
-  <li><code class="language-plaintext highlighter-rouge">research-notebooks</code>: This directory contains notebooks from past research projects that may be useful for reference or inspiration. You may find similar research topics or methods in these notebooks that you can apply to your own work.</li>
-</ul>
+<p>To use any AI model provider within notebooks, you’ll need the appropriate credentials, such as API keys.</p>
 
-<h3 id="uploading-files-to-the-shared-directory">Uploading Files to the Shared Directory</h3>
+<p>Obtain the necessary credentials (e.g., API keys) from your model provider’s platform.</p>
 
-<p>To upload files to the shared directory in JupyterHub:</p>
+<p>You can set your keys using environment variables or in a code cell in your notebook.
+In a code cell, you can use the %env magic command to set the credentials as follows:</p>
 
-<ol>
-  <li>Navigate to the shared directory using the steps outlined in the previous section.</li>
-  <li>Click on the “Upload” button at the top of the page.</li>
-  <li>Select the file or files you want to upload.</li>
-  <li>Click the “Upload” button.</li>
-</ol>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># NOTE: Replace 'PROVIDER_API_KEY' with the credential key's name,
+# and replace 'YOUR_API_KEY_HERE' with the key.
+</span><span class="o">%</span><span class="n">env</span> <span class="n">PROVIDER_API_KEY</span><span class="o">=</span><span class="n">YOUR_API_KEY_HERE</span>
+</code></pre></div></div>
+<h2 id="jupyter-ai-magic-command-usage">Jupyter AI Magic Command Usage</h2>
 
-<h3 id="collaborating-on-files-in-the-shared-directory">Collaborating on Files in the Shared Directory</h3>
-
-<p>Once you have uploaded a file to the shared directory, other users can access and edit the file. To collaborate on files in the shared directory:</p>
-
-<ol>
-  <li>Navigate to the shared directory using the steps outlined in the first section.</li>
-  <li>Find the file you want to collaborate on and click on it to open it.</li>
-  <li>Make any necessary changes to the file.</li>
-  <li>Save the changes.</li>
-</ol>
+<p>To use the AI magic command, follow the <a href="https://jupyter-ai.readthedocs.io/en/latest/users/index.html#the-ai-and-ai-magic-commands">user guide</a> and <a href="https://github.com/jupyterlab/jupyter-ai/tree/main/examples">examples</a> created by the Project Jupyter Team.</p>
 
         
       </section>

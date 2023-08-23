@@ -20,6 +20,8 @@ docs:
         url: user-docs/shared-directory-usage
       - title: "Install Python Package(s)"
         url: user-docs/install-py-packages
+      - title: "Jupyter AI"
+        url: user-docs/jupyter-ai-magic
   - title: Open Data Cube Resources
     children:
       - title: "Python API \u2197"
