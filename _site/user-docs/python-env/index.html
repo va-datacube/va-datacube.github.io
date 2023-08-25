@@ -1,0 +1,1999 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>VMASC VA Data Cube Python Environment - VMASC Virginia Data Cube</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Your Name">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="VMASC Virginia Data Cube">
+<meta property="og:title" content="VMASC VA Data Cube Python Environment">
+<meta property="og:url" content="http://localhost:4000/user-docs/python-env/">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/user-docs/python-env/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/images/VSDC_DataCubeSplash_6Partner_edited.png" alt="VMASC Virginia Data Cube"></a>
+        
+        <a class="site-title" href="/">
+          VMASC Virginia Data Cube
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/user-docs/index">User Documentation</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://datacube.online/">VMASC VA Data Cube  ↗</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Getting Started</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/user-docs/sign-up">Sign-Up for an Account</a></li>
+          
+            <li><a href="/user-docs/request-account">Request Account</a></li>
+          
+            <li><a href="/user-docs/dc-products-datasets">Data Cube Products and Datasets</a></li>
+          
+            <li><a href="/user-docs/python-env">Data Cube Python Enviornment</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Using VA Data Cube</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/user-docs/shared-directory-usage">Shared Directory Usage</a></li>
+          
+            <li><a href="/user-docs/install-py-packages">Install Python Package(s)</a></li>
+          
+            <li><a href="/user-docs/jupyter-ai-magic">Jupyter AI</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Open Data Cube Resources</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="https://datacube-core.readthedocs.io/en/latest/api/index.html">Python API ↗</a></li>
+          
+            <li><a href="https://datacube-core.readthedocs.io/en/latest/data-access-analysis/tools-exploring-data/using-juypter.html">ODC Jupyter Notebook Examples ↗</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="VMASC VA Data Cube Python Environment">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/user-docs/python-env/" class="u-url" itemprop="url">VMASC VA Data Cube Python Environment
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>The following is a list of python packages that are currently installed on the Data Cube. Users have the ability to utiilize this, create their own conda environment, or <a href="/user-docs/install-py-packages">install python packages local</a> to their user on the Data Cube.</p>
+
+<h2 id="packages">Packages</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_libgcc_mutex</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>_openmp_mutex</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>access</td>
+      <td>1.1.9</td>
+    </tr>
+    <tr>
+      <td>affine</td>
+      <td>2.4.0</td>
+    </tr>
+    <tr>
+      <td>aiobotocore</td>
+      <td>2.5.2</td>
+    </tr>
+    <tr>
+      <td>aiofiles</td>
+      <td>22.1.0</td>
+    </tr>
+    <tr>
+      <td>aiohttp</td>
+      <td>3.8.4</td>
+    </tr>
+    <tr>
+      <td>aioitertools</td>
+      <td>0.11.0</td>
+    </tr>
+    <tr>
+      <td>aiosignal</td>
+      <td>1.3.1</td>
+    </tr>
+    <tr>
+      <td>aiosqlite</td>
+      <td>0.19.0</td>
+    </tr>
+    <tr>
+      <td>alembic</td>
+      <td>1.11.1</td>
+    </tr>
+    <tr>
+      <td>anyio</td>
+      <td>3.7.1</td>
+    </tr>
+    <tr>
+      <td>argon2-cffi</td>
+      <td>21.3.0</td>
+    </tr>
+    <tr>
+      <td>argon2-cffi-bindings</td>
+      <td>21.2.0</td>
+    </tr>
+    <tr>
+      <td>arrow</td>
+      <td>1.2.3</td>
+    </tr>
+    <tr>
+      <td>asttokens</td>
+      <td>2.2.1</td>
+    </tr>
+    <tr>
+      <td>async-generator</td>
+      <td>1.10</td>
+    </tr>
+    <tr>
+      <td>async-timeout</td>
+      <td>4.0.2</td>
+    </tr>
+    <tr>
+      <td>attrs</td>
+      <td>23.1.0</td>
+    </tr>
+    <tr>
+      <td>babel</td>
+      <td>2.12.1</td>
+    </tr>
+    <tr>
+      <td>backcall</td>
+      <td>0.2.0</td>
+    </tr>
+    <tr>
+      <td>beautifulsoup4</td>
+      <td>4.12.2</td>
+    </tr>
+    <tr>
+      <td>bleach</td>
+      <td>6.0.0</td>
+    </tr>
+    <tr>
+      <td>bokeh</td>
+      <td>2.4.3</td>
+    </tr>
+    <tr>
+      <td>boltons</td>
+      <td>23.0.0</td>
+    </tr>
+    <tr>
+      <td>boost-cpp</td>
+      <td>1.74.0</td>
+    </tr>
+    <tr>
+      <td>boto3</td>
+      <td>1.24.59</td>
+    </tr>
+    <tr>
+      <td>botocore</td>
+      <td>1.27.59</td>
+    </tr>
+    <tr>
+      <td>bottleneck</td>
+      <td>1.3.7</td>
+    </tr>
+    <tr>
+      <td>branca</td>
+      <td>0.6.0</td>
+    </tr>
+    <tr>
+      <td>brotlipy</td>
+      <td>0.7.0</td>
+    </tr>
+    <tr>
+      <td>bzip2</td>
+      <td>1.0.8</td>
+    </tr>
+    <tr>
+      <td>c-ares</td>
+      <td>1.17.2</td>
+    </tr>
+    <tr>
+      <td>ca-certificates</td>
+      <td>2023.7.22</td>
+    </tr>
+    <tr>
+      <td>cachetools</td>
+      <td>5.3.1</td>
+    </tr>
+    <tr>
+      <td>cairo</td>
+      <td>1.16.0</td>
+    </tr>
+    <tr>
+      <td>cattrs</td>
+      <td>23.1.2</td>
+    </tr>
+    <tr>
+      <td>cenpy</td>
+      <td>1.0.1</td>
+    </tr>
+    <tr>
+      <td>certifi</td>
+      <td>2023.7.22</td>
+    </tr>
+    <tr>
+      <td>certipy</td>
+      <td>0.1.3</td>
+    </tr>
+    <tr>
+      <td>cffi</td>
+      <td>1.14.6</td>
+    </tr>
+    <tr>
+      <td>cfitsio</td>
+      <td>3.470</td>
+    </tr>
+    <tr>
+      <td>cftime</td>
+      <td>1.6.2</td>
+    </tr>
+    <tr>
+      <td>chardet</td>
+      <td>4.0.0</td>
+    </tr>
+    <tr>
+      <td>charset-normalizer</td>
+      <td>2.0.0</td>
+    </tr>
+    <tr>
+      <td>ciso8601</td>
+      <td>2.3.0</td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>8.1.5</td>
+    </tr>
+    <tr>
+      <td>click-plugins</td>
+      <td>1.1.1</td>
+    </tr>
+    <tr>
+      <td>cligj</td>
+      <td>0.7.2</td>
+    </tr>
+    <tr>
+      <td>cloudpickle</td>
+      <td>2.2.1</td>
+    </tr>
+    <tr>
+      <td>colorama</td>
+      <td>0.4.4</td>
+    </tr>
+    <tr>
+      <td>comm</td>
+      <td>0.1.3</td>
+    </tr>
+    <tr>
+      <td>conda</td>
+      <td>23.5.2</td>
+    </tr>
+    <tr>
+      <td>conda-package-handling</td>
+      <td>1.7.3</td>
+    </tr>
+    <tr>
+      <td>contourpy</td>
+      <td>1.1.0</td>
+    </tr>
+    <tr>
+      <td>croniter</td>
+      <td>1.4.1</td>
+    </tr>
+    <tr>
+      <td>cryptography</td>
+      <td>3.4.8</td>
+    </tr>
+    <tr>
+      <td>curl</td>
+      <td>7.79.1</td>
+    </tr>
+    <tr>
+      <td>cycler</td>
+      <td>0.11.0</td>
+    </tr>
+    <tr>
+      <td>cython</td>
+      <td>3.0.0</td>
+    </tr>
+    <tr>
+      <td>dask</td>
+      <td>2023.3.1</td>
+    </tr>
+    <tr>
+      <td>dask-glm</td>
+      <td>0.2.0</td>
+    </tr>
+    <tr>
+      <td>dask-image</td>
+      <td>2023.3.0</td>
+    </tr>
+    <tr>
+      <td>dataclasses-json</td>
+      <td>0.5.14</td>
+    </tr>
+    <tr>
+      <td>datacube</td>
+      <td>1.8.13</td>
+    </tr>
+    <tr>
+      <td>datetime</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <td>deafrica-tools</td>
+      <td>0.0.3</td>
+    </tr>
+    <tr>
+      <td>debugpy</td>
+      <td>1.6.7</td>
+    </tr>
+    <tr>
+      <td>decorator</td>
+      <td>5.1.1</td>
+    </tr>
+    <tr>
+      <td>defusedxml</td>
+      <td>0.7.1</td>
+    </tr>
+    <tr>
+      <td>deprecat</td>
+      <td>2.1.1</td>
+    </tr>
+    <tr>
+      <td>deprecation</td>
+      <td>2.1.0</td>
+    </tr>
+    <tr>
+      <td>distributed</td>
+      <td>2023.3.1</td>
+    </tr>
+    <tr>
+      <td>entrypoints</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>eodatasets3</td>
+      <td>0.29.7</td>
+    </tr>
+    <tr>
+      <td>esda</td>
+      <td>2.4.3</td>
+    </tr>
+    <tr>
+      <td>exceptiongroup</td>
+      <td>1.1.2</td>
+    </tr>
+    <tr>
+      <td>executing</td>
+      <td>1.2.0</td>
+    </tr>
+    <tr>
+      <td>expat</td>
+      <td>2.5.0</td>
+    </tr>
+    <tr>
+      <td>fiona</td>
+      <td>1.9.4.post1</td>
+    </tr>
+    <tr>
+      <td>flit-core</td>
+      <td>3.9.0</td>
+    </tr>
+    <tr>
+      <td>folium</td>
+      <td>0.14.0</td>
+    </tr>
+    <tr>
+      <td>font-ttf-dejavu-sans-mono</td>
+      <td>2.37</td>
+    </tr>
+    <tr>
+      <td>font-ttf-inconsolata</td>
+      <td>3.000</td>
+    </tr>
+    <tr>
+      <td>font-ttf-source-code-pro</td>
+      <td>2.038</td>
+    </tr>
+    <tr>
+      <td>font-ttf-ubuntu</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>fontconfig</td>
+      <td>2.14.0</td>
+    </tr>
+    <tr>
+      <td>fonts-conda-ecosystem</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>fonts-conda-forge</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>fonttools</td>
+      <td>4.41.0</td>
+    </tr>
+    <tr>
+      <td>fqdn</td>
+      <td>1.5.1</td>
+    </tr>
+    <tr>
+      <td>freetype</td>
+      <td>2.10.4</td>
+    </tr>
+    <tr>
+      <td>freexl</td>
+      <td>1.0.6</td>
+    </tr>
+    <tr>
+      <td>frozenlist</td>
+      <td>1.4.0</td>
+    </tr>
+    <tr>
+      <td>fsspec</td>
+      <td>2023.3.0</td>
+    </tr>
+    <tr>
+      <td>fuzzywuzzy</td>
+      <td>0.18.0</td>
+    </tr>
+    <tr>
+      <td>gdal</td>
+      <td>3.3.2</td>
+    </tr>
+    <tr>
+      <td>geoalchemy2</td>
+      <td>0.14.0</td>
+    </tr>
+    <tr>
+      <td>geographiclib</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>geojson</td>
+      <td>3.0.1</td>
+    </tr>
+    <tr>
+      <td>geopandas</td>
+      <td>0.13.2</td>
+    </tr>
+    <tr>
+      <td>geopy</td>
+      <td>2.3.0</td>
+    </tr>
+    <tr>
+      <td>geos</td>
+      <td>3.9.1</td>
+    </tr>
+    <tr>
+      <td>geotiff</td>
+      <td>1.7.0</td>
+    </tr>
+    <tr>
+      <td>gettext</td>
+      <td>0.21.1</td>
+    </tr>
+    <tr>
+      <td>giddy</td>
+      <td>2.3.4</td>
+    </tr>
+    <tr>
+      <td>giflib</td>
+      <td>5.2.1</td>
+    </tr>
+    <tr>
+      <td>gitdb</td>
+      <td>4.0.10</td>
+    </tr>
+    <tr>
+      <td>gitpython</td>
+      <td>3.1.32</td>
+    </tr>
+    <tr>
+      <td>greenlet</td>
+      <td>2.0.2</td>
+    </tr>
+    <tr>
+      <td>h5py</td>
+      <td>3.9.0</td>
+    </tr>
+    <tr>
+      <td>hdf4</td>
+      <td>4.2.15</td>
+    </tr>
+    <tr>
+      <td>hdf5</td>
+      <td>1.12.1</td>
+    </tr>
+    <tr>
+      <td>hdstats</td>
+      <td>0.2.1</td>
+    </tr>
+    <tr>
+      <td>icu</td>
+      <td>68.1</td>
+    </tr>
+    <tr>
+      <td>idna</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>imageio</td>
+      <td>2.31.1</td>
+    </tr>
+    <tr>
+      <td>importlib-metadata</td>
+      <td>5.2.0</td>
+    </tr>
+    <tr>
+      <td>importlib_resources</td>
+      <td>6.0.0</td>
+    </tr>
+    <tr>
+      <td>inequality</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>ipykernel</td>
+      <td>6.24.0</td>
+    </tr>
+    <tr>
+      <td>ipyleaflet</td>
+      <td>0.17.2</td>
+    </tr>
+    <tr>
+      <td>ipython</td>
+      <td>8.13.1</td>
+    </tr>
+    <tr>
+      <td>ipython-genutils</td>
+      <td>0.2.0</td>
+    </tr>
+    <tr>
+      <td>ipywidgets</td>
+      <td>8.0.6</td>
+    </tr>
+    <tr>
+      <td>isoduration</td>
+      <td>20.11.0</td>
+    </tr>
+    <tr>
+      <td>jbig</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>jedi</td>
+      <td>0.18.2</td>
+    </tr>
+    <tr>
+      <td>jinja2</td>
+      <td>3.1.2</td>
+    </tr>
+    <tr>
+      <td>jmespath</td>
+      <td>1.0.1</td>
+    </tr>
+    <tr>
+      <td>joblib</td>
+      <td>1.2.0</td>
+    </tr>
+    <tr>
+      <td>jpeg</td>
+      <td>9e</td>
+    </tr>
+    <tr>
+      <td>json-c</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>json5</td>
+      <td>0.9.14</td>
+    </tr>
+    <tr>
+      <td>jsonpatch</td>
+      <td>1.32</td>
+    </tr>
+    <tr>
+      <td>jsonpath-ng</td>
+      <td>1.5.3</td>
+    </tr>
+    <tr>
+      <td>jsonpointer</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>jsonschema</td>
+      <td>4.18.3</td>
+    </tr>
+    <tr>
+      <td>jsonschema-specifications</td>
+      <td>2023.6.1</td>
+    </tr>
+    <tr>
+      <td>jupyter-ai-magics</td>
+      <td>2.1.0</td>
+    </tr>
+    <tr>
+      <td>jupyter-client</td>
+      <td>8.3.0</td>
+    </tr>
+    <tr>
+      <td>jupyter-events</td>
+      <td>0.6.3</td>
+    </tr>
+    <tr>
+      <td>jupyter-resource-usage</td>
+      <td>0.6.4</td>
+    </tr>
+    <tr>
+      <td>jupyter-server</td>
+      <td>1.24.0</td>
+    </tr>
+    <tr>
+      <td>jupyter-server-fileid</td>
+      <td>0.9.0</td>
+    </tr>
+    <tr>
+      <td>jupyter-server-mathjax</td>
+      <td>0.2.6</td>
+    </tr>
+    <tr>
+      <td>jupyter-server-ydoc</td>
+      <td>0.8.0</td>
+    </tr>
+    <tr>
+      <td>jupyter-telemetry</td>
+      <td>0.1.0</td>
+    </tr>
+    <tr>
+      <td>jupyter-ui-poll</td>
+      <td>0.2.2</td>
+    </tr>
+    <tr>
+      <td>jupyter-ydoc</td>
+      <td>0.2.4</td>
+    </tr>
+    <tr>
+      <td>jupyter_client</td>
+      <td>7.0.6</td>
+    </tr>
+    <tr>
+      <td>jupyter_core</td>
+      <td>5.3.1</td>
+    </tr>
+    <tr>
+      <td>jupyter_server</td>
+      <td>1.23.6</td>
+    </tr>
+    <tr>
+      <td>jupyterhub</td>
+      <td>1.5.1</td>
+    </tr>
+    <tr>
+      <td>jupyterlab</td>
+      <td>3.6.5</td>
+    </tr>
+    <tr>
+      <td>jupyterlab-git</td>
+      <td>0.41.0</td>
+    </tr>
+    <tr>
+      <td>jupyterlab-server</td>
+      <td>2.23.0</td>
+    </tr>
+    <tr>
+      <td>jupyterlab-widgets</td>
+      <td>3.0.8</td>
+    </tr>
+    <tr>
+      <td>jupyterlab_pygments</td>
+      <td>0.2.2</td>
+    </tr>
+    <tr>
+      <td>kealib</td>
+      <td>1.4.14</td>
+    </tr>
+    <tr>
+      <td>kiwisolver</td>
+      <td>1.4.4</td>
+    </tr>
+    <tr>
+      <td>krb5</td>
+      <td>1.19.2</td>
+    </tr>
+    <tr>
+      <td>langchain</td>
+      <td>0.0.223</td>
+    </tr>
+    <tr>
+      <td>langchainplus-sdk</td>
+      <td>0.0.20</td>
+    </tr>
+    <tr>
+      <td>lark</td>
+      <td>1.1.5</td>
+    </tr>
+    <tr>
+      <td>lazy-loader</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>lcms2</td>
+      <td>2.12</td>
+    </tr>
+    <tr>
+      <td>ld_impl_linux-64</td>
+      <td>2.36.1</td>
+    </tr>
+    <tr>
+      <td>lerc</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>libarchive</td>
+      <td>3.5.2</td>
+    </tr>
+    <tr>
+      <td>libblas</td>
+      <td>3.9.0</td>
+    </tr>
+    <tr>
+      <td>libcblas</td>
+      <td>3.9.0</td>
+    </tr>
+    <tr>
+      <td>libcurl</td>
+      <td>7.79.1</td>
+    </tr>
+    <tr>
+      <td>libdap4</td>
+      <td>3.20.6</td>
+    </tr>
+    <tr>
+      <td>libdeflate</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>libedit</td>
+      <td>3.1.20191231</td>
+    </tr>
+    <tr>
+      <td>libev</td>
+      <td>4.33</td>
+    </tr>
+    <tr>
+      <td>libexpat</td>
+      <td>2.5.0</td>
+    </tr>
+    <tr>
+      <td>libffi</td>
+      <td>3.4.2</td>
+    </tr>
+    <tr>
+      <td>libgcc</td>
+      <td>7.2.0</td>
+    </tr>
+    <tr>
+      <td>libgcc-ng</td>
+      <td>13.1.0</td>
+    </tr>
+    <tr>
+      <td>libgdal</td>
+      <td>3.3.2</td>
+    </tr>
+    <tr>
+      <td>libgfortran-ng</td>
+      <td>13.1.0</td>
+    </tr>
+    <tr>
+      <td>libgfortran5</td>
+      <td>13.1.0</td>
+    </tr>
+    <tr>
+      <td>libglib</td>
+      <td>2.70.2</td>
+    </tr>
+    <tr>
+      <td>libgomp</td>
+      <td>13.1.0</td>
+    </tr>
+    <tr>
+      <td>libiconv</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <td>libkml</td>
+      <td>1.3.0</td>
+    </tr>
+    <tr>
+      <td>liblapack</td>
+      <td>3.9.0</td>
+    </tr>
+    <tr>
+      <td>libnetcdf</td>
+      <td>4.8.1</td>
+    </tr>
+    <tr>
+      <td>libnghttp2</td>
+      <td>1.43.0</td>
+    </tr>
+    <tr>
+      <td>libnsl</td>
+      <td>2.0.0</td>
+    </tr>
+    <tr>
+      <td>libopenblas</td>
+      <td>0.3.23</td>
+    </tr>
+    <tr>
+      <td>libpng</td>
+      <td>1.6.37</td>
+    </tr>
+    <tr>
+      <td>libpq</td>
+      <td>13.5</td>
+    </tr>
+    <tr>
+      <td>libpysal</td>
+      <td>4.7.0</td>
+    </tr>
+    <tr>
+      <td>librttopo</td>
+      <td>1.1.0</td>
+    </tr>
+    <tr>
+      <td>libsodium</td>
+      <td>1.0.18</td>
+    </tr>
+    <tr>
+      <td>libsolv</td>
+      <td>0.7.19</td>
+    </tr>
+    <tr>
+      <td>libspatialite</td>
+      <td>5.0.1</td>
+    </tr>
+    <tr>
+      <td>libssh2</td>
+      <td>1.10.0</td>
+    </tr>
+    <tr>
+      <td>libstdcxx-ng</td>
+      <td>13.1.0</td>
+    </tr>
+    <tr>
+      <td>libtiff</td>
+      <td>4.3.0</td>
+    </tr>
+    <tr>
+      <td>libuuid</td>
+      <td>2.38.1</td>
+    </tr>
+    <tr>
+      <td>libwebp-base</td>
+      <td>1.3.1</td>
+    </tr>
+    <tr>
+      <td>libxcb</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <td>libxml2</td>
+      <td>2.9.12</td>
+    </tr>
+    <tr>
+      <td>libzip</td>
+      <td>1.8.0</td>
+    </tr>
+    <tr>
+      <td>libzlib</td>
+      <td>1.2.11</td>
+    </tr>
+    <tr>
+      <td>llvmlite</td>
+      <td>0.40.1</td>
+    </tr>
+    <tr>
+      <td>lmdb</td>
+      <td>1.4.1</td>
+    </tr>
+    <tr>
+      <td>locket</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>lxml</td>
+      <td>4.9.3</td>
+    </tr>
+    <tr>
+      <td>lz4</td>
+      <td>4.3.2</td>
+    </tr>
+    <tr>
+      <td>lz4-c</td>
+      <td>1.9.3</td>
+    </tr>
+    <tr>
+      <td>lzo</td>
+      <td>2.10</td>
+    </tr>
+    <tr>
+      <td>mako</td>
+      <td>1.2.4</td>
+    </tr>
+    <tr>
+      <td>mamba</td>
+      <td>0.16.0</td>
+    </tr>
+    <tr>
+      <td>mapclassify</td>
+      <td>2.6.0</td>
+    </tr>
+    <tr>
+      <td>markupsafe</td>
+      <td>2.1.3</td>
+    </tr>
+    <tr>
+      <td>marshmallow</td>
+      <td>3.20.1</td>
+    </tr>
+    <tr>
+      <td>matplotlib</td>
+      <td>3.5.1</td>
+    </tr>
+    <tr>
+      <td>matplotlib-inline</td>
+      <td>0.1.6</td>
+    </tr>
+    <tr>
+      <td>mgwr</td>
+      <td>2.1.2</td>
+    </tr>
+    <tr>
+      <td>mistune</td>
+      <td>3.0.1</td>
+    </tr>
+    <tr>
+      <td>momepy</td>
+      <td>0.6.0</td>
+    </tr>
+    <tr>
+      <td>mpmath</td>
+      <td>1.3.0</td>
+    </tr>
+    <tr>
+      <td>msgpack</td>
+      <td>1.0.5</td>
+    </tr>
+    <tr>
+      <td>multidict</td>
+      <td>6.0.4</td>
+    </tr>
+    <tr>
+      <td>multipledispatch</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>mypy-extensions</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>nbclassic</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>nbclient</td>
+      <td>0.8.0</td>
+    </tr>
+    <tr>
+      <td>nbconvert-core</td>
+      <td>7.6.0</td>
+    </tr>
+    <tr>
+      <td>nbdime</td>
+      <td>3.2.1</td>
+    </tr>
+    <tr>
+      <td>nbformat</td>
+      <td>5.9.1</td>
+    </tr>
+    <tr>
+      <td>nbgitpuller</td>
+      <td>1.1.1</td>
+    </tr>
+    <tr>
+      <td>ncurses</td>
+      <td>6.2</td>
+    </tr>
+    <tr>
+      <td>nest-asyncio</td>
+      <td>1.5.6</td>
+    </tr>
+    <tr>
+      <td>netcdf4</td>
+      <td>1.6.4</td>
+    </tr>
+    <tr>
+      <td>networkx</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>notebook</td>
+      <td>6.5.4</td>
+    </tr>
+    <tr>
+      <td>notebook-shim</td>
+      <td>0.2.3</td>
+    </tr>
+    <tr>
+      <td>nteract-on-jupyter</td>
+      <td>2.1.3</td>
+    </tr>
+    <tr>
+      <td>numba</td>
+      <td>0.57.1</td>
+    </tr>
+    <tr>
+      <td>numexpr</td>
+      <td>2.8.4</td>
+    </tr>
+    <tr>
+      <td>numpy</td>
+      <td>1.23.5</td>
+    </tr>
+    <tr>
+      <td>oauthlib</td>
+      <td>3.2.2</td>
+    </tr>
+    <tr>
+      <td>odc-algo</td>
+      <td>0.2.3</td>
+    </tr>
+    <tr>
+      <td>odc-cloud</td>
+      <td>0.2.3</td>
+    </tr>
+    <tr>
+      <td>odc-dscache</td>
+      <td>0.2.2</td>
+    </tr>
+    <tr>
+      <td>odc-geo</td>
+      <td>0.4.1</td>
+    </tr>
+    <tr>
+      <td>odc-io</td>
+      <td>0.2.1</td>
+    </tr>
+    <tr>
+      <td>odc-stac</td>
+      <td>0.3.6</td>
+    </tr>
+    <tr>
+      <td>odc-stats</td>
+      <td>1.0.35</td>
+    </tr>
+    <tr>
+      <td>odc-ui</td>
+      <td>0.2.1.dev3673</td>
+    </tr>
+    <tr>
+      <td>openai</td>
+      <td>0.27.8</td>
+    </tr>
+    <tr>
+      <td>openapi-schema-pydantic</td>
+      <td>1.2.4</td>
+    </tr>
+    <tr>
+      <td>openjpeg</td>
+      <td>2.5.0</td>
+    </tr>
+    <tr>
+      <td>openssl</td>
+      <td>1.1.1u</td>
+    </tr>
+    <tr>
+      <td>osmnx</td>
+      <td>1.6.0</td>
+    </tr>
+    <tr>
+      <td>otps</td>
+      <td>0.3.2</td>
+    </tr>
+    <tr>
+      <td>owslib</td>
+      <td>0.29.2</td>
+    </tr>
+    <tr>
+      <td>packaging</td>
+      <td>23.1</td>
+    </tr>
+    <tr>
+      <td>pamela</td>
+      <td>1.1.0</td>
+    </tr>
+    <tr>
+      <td>pandas</td>
+      <td>2.0.2</td>
+    </tr>
+    <tr>
+      <td>pandocfilters</td>
+      <td>1.5.0</td>
+    </tr>
+    <tr>
+      <td>parso</td>
+      <td>0.8.3</td>
+    </tr>
+    <tr>
+      <td>partd</td>
+      <td>1.4.0</td>
+    </tr>
+    <tr>
+      <td>patsy</td>
+      <td>0.5.3</td>
+    </tr>
+    <tr>
+      <td>pcre</td>
+      <td>8.45</td>
+    </tr>
+    <tr>
+      <td>pexpect</td>
+      <td>4.8.0</td>
+    </tr>
+    <tr>
+      <td>pickleshare</td>
+      <td>0.7.5</td>
+    </tr>
+    <tr>
+      <td>pillow</td>
+      <td>10.0.0</td>
+    </tr>
+    <tr>
+      <td>pims</td>
+      <td>0.6.1</td>
+    </tr>
+    <tr>
+      <td>pip</td>
+      <td>21.3</td>
+    </tr>
+    <tr>
+      <td>pixman</td>
+      <td>0.40.0</td>
+    </tr>
+    <tr>
+      <td>pkgutil-resolve-name</td>
+      <td>1.3.10</td>
+    </tr>
+    <tr>
+      <td>platformdirs</td>
+      <td>3.8.1</td>
+    </tr>
+    <tr>
+      <td>pluggy</td>
+      <td>1.2.0</td>
+    </tr>
+    <tr>
+      <td>ply</td>
+      <td>3.11</td>
+    </tr>
+    <tr>
+      <td>pointpats</td>
+      <td>2.3.0</td>
+    </tr>
+    <tr>
+      <td>poppler</td>
+      <td>21.09.0</td>
+    </tr>
+    <tr>
+      <td>poppler-data</td>
+      <td>0.4.12</td>
+    </tr>
+    <tr>
+      <td>postgresql</td>
+      <td>13.5</td>
+    </tr>
+    <tr>
+      <td>proj</td>
+      <td>8.1.1</td>
+    </tr>
+    <tr>
+      <td>prometheus_client</td>
+      <td>0.17.1</td>
+    </tr>
+    <tr>
+      <td>prompt-toolkit</td>
+      <td>3.0.39</td>
+    </tr>
+    <tr>
+      <td>psutil</td>
+      <td>5.9.5</td>
+    </tr>
+    <tr>
+      <td>psycopg2</td>
+      <td>2.9.6</td>
+    </tr>
+    <tr>
+      <td>pthread-stubs</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>ptyprocess</td>
+      <td>0.7.0</td>
+    </tr>
+    <tr>
+      <td>pulp</td>
+      <td>2.7.0</td>
+    </tr>
+    <tr>
+      <td>pure-eval</td>
+      <td>0.2.2</td>
+    </tr>
+    <tr>
+      <td>pyarrow</td>
+      <td>12.0.1</td>
+    </tr>
+    <tr>
+      <td>pycosat</td>
+      <td>0.6.3</td>
+    </tr>
+    <tr>
+      <td>pycparser</td>
+      <td>2.20</td>
+    </tr>
+    <tr>
+      <td>pydantic</td>
+      <td>1.10.11</td>
+    </tr>
+    <tr>
+      <td>pygments</td>
+      <td>2.15.1</td>
+    </tr>
+    <tr>
+      <td>pyopenssl</td>
+      <td>21.0.0</td>
+    </tr>
+    <tr>
+      <td>pyparsing</td>
+      <td>3.0.9</td>
+    </tr>
+    <tr>
+      <td>pyproj</td>
+      <td>3.5.0</td>
+    </tr>
+    <tr>
+      <td>pysal</td>
+      <td>23.7</td>
+    </tr>
+    <tr>
+      <td>pysocks</td>
+      <td>1.7.1</td>
+    </tr>
+    <tr>
+      <td>pystac</td>
+      <td>1.7.3</td>
+    </tr>
+    <tr>
+      <td>python</td>
+      <td>3.9.7</td>
+    </tr>
+    <tr>
+      <td>python-dateutil</td>
+      <td>2.8.2</td>
+    </tr>
+    <tr>
+      <td>python-fastjsonschema</td>
+      <td>2.17.1</td>
+    </tr>
+    <tr>
+      <td>python-json-logger</td>
+      <td>2.0.7</td>
+    </tr>
+    <tr>
+      <td>python-rapidjson</td>
+      <td>1.10</td>
+    </tr>
+    <tr>
+      <td>python_abi</td>
+      <td>3.9</td>
+    </tr>
+    <tr>
+      <td>pytz</td>
+      <td>2023.3</td>
+    </tr>
+    <tr>
+      <td>pywavelets</td>
+      <td>1.4.1</td>
+    </tr>
+    <tr>
+      <td>pyyaml</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td>pyzmq</td>
+      <td>25.1.0</td>
+    </tr>
+    <tr>
+      <td>quantecon</td>
+      <td>0.7.1</td>
+    </tr>
+    <tr>
+      <td>rasterio</td>
+      <td>1.3.7</td>
+    </tr>
+    <tr>
+      <td>rasterstats</td>
+      <td>0.19.0</td>
+    </tr>
+    <tr>
+      <td>readline</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <td>referencing</td>
+      <td>0.29.1</td>
+    </tr>
+    <tr>
+      <td>reproc</td>
+      <td>14.2.3</td>
+    </tr>
+    <tr>
+      <td>reproc-cpp</td>
+      <td>14.2.3</td>
+    </tr>
+    <tr>
+      <td>requests</td>
+      <td>2.31.0</td>
+    </tr>
+    <tr>
+      <td>rfc3339-validator</td>
+      <td>0.1.4</td>
+    </tr>
+    <tr>
+      <td>rfc3986-validator</td>
+      <td>0.1.1</td>
+    </tr>
+    <tr>
+      <td>rio-xarray</td>
+      <td>0.14.1</td>
+    </tr>
+    <tr>
+      <td>rpds-py</td>
+      <td>0.8.10</td>
+    </tr>
+    <tr>
+      <td>rtree</td>
+      <td>1.0.1</td>
+    </tr>
+    <tr>
+      <td>ruamel.yaml</td>
+      <td>0.17.32</td>
+    </tr>
+    <tr>
+      <td>ruamel.yaml.clib</td>
+      <td>0.2.7</td>
+    </tr>
+    <tr>
+      <td>ruamel_yaml</td>
+      <td>0.15.80</td>
+    </tr>
+    <tr>
+      <td>s3fs</td>
+      <td>2023.6.0</td>
+    </tr>
+    <tr>
+      <td>s3transfer</td>
+      <td>0.6.1</td>
+    </tr>
+    <tr>
+      <td>scikit-image</td>
+      <td>0.21.0</td>
+    </tr>
+    <tr>
+      <td>scikit-learn</td>
+      <td>1.2.2</td>
+    </tr>
+    <tr>
+      <td>scipy</td>
+      <td>1.10.1</td>
+    </tr>
+    <tr>
+      <td>seaborn</td>
+      <td>0.12.2</td>
+    </tr>
+    <tr>
+      <td>segregation</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>send2trash</td>
+      <td>1.8.2</td>
+    </tr>
+    <tr>
+      <td>setuptools</td>
+      <td>58.2.0</td>
+    </tr>
+    <tr>
+      <td>shapely</td>
+      <td>2.0.1</td>
+    </tr>
+    <tr>
+      <td>simplejson</td>
+      <td>3.19.1</td>
+    </tr>
+    <tr>
+      <td>six</td>
+      <td>1.16.0</td>
+    </tr>
+    <tr>
+      <td>slicerator</td>
+      <td>1.1.0</td>
+    </tr>
+    <tr>
+      <td>smmap</td>
+      <td>3.0.5</td>
+    </tr>
+    <tr>
+      <td>sniffio</td>
+      <td>1.3.0</td>
+    </tr>
+    <tr>
+      <td>snuggs</td>
+      <td>1.4.7</td>
+    </tr>
+    <tr>
+      <td>sortedcontainers</td>
+      <td>2.4.0</td>
+    </tr>
+    <tr>
+      <td>soupsieve</td>
+      <td>2.4.1</td>
+    </tr>
+    <tr>
+      <td>spaghetti</td>
+      <td>1.7.4</td>
+    </tr>
+    <tr>
+      <td>spglm</td>
+      <td>1.0.8</td>
+    </tr>
+    <tr>
+      <td>spint</td>
+      <td>1.0.7</td>
+    </tr>
+    <tr>
+      <td>splot</td>
+      <td>1.1.5.post1</td>
+    </tr>
+    <tr>
+      <td>spopt</td>
+      <td>0.5.0</td>
+    </tr>
+    <tr>
+      <td>spreg</td>
+      <td>1.3.2</td>
+    </tr>
+    <tr>
+      <td>spvcm</td>
+      <td>0.3.0</td>
+    </tr>
+    <tr>
+      <td>sqlalchemy</td>
+      <td>1.4.49</td>
+    </tr>
+    <tr>
+      <td>sqlite</td>
+      <td>3.36.0</td>
+    </tr>
+    <tr>
+      <td>stack-data</td>
+      <td>0.6.2</td>
+    </tr>
+    <tr>
+      <td>statsmodels</td>
+      <td>0.14.0</td>
+    </tr>
+    <tr>
+      <td>structlog</td>
+      <td>23.1.0</td>
+    </tr>
+    <tr>
+      <td>sympy</td>
+      <td>1.12</td>
+    </tr>
+    <tr>
+      <td>tblib</td>
+      <td>2.0.0</td>
+    </tr>
+    <tr>
+      <td>tenacity</td>
+      <td>8.2.3</td>
+    </tr>
+    <tr>
+      <td>terminado</td>
+      <td>0.17.1</td>
+    </tr>
+    <tr>
+      <td>threadpoolctl</td>
+      <td>3.2.0</td>
+    </tr>
+    <tr>
+      <td>tifffile</td>
+      <td>2023.7.18</td>
+    </tr>
+    <tr>
+      <td>tiledb</td>
+      <td>2.3.4</td>
+    </tr>
+    <tr>
+      <td>tinycss2</td>
+      <td>1.2.1</td>
+    </tr>
+    <tr>
+      <td>tk</td>
+      <td>8.6.11</td>
+    </tr>
+    <tr>
+      <td>tobler</td>
+      <td>0.11.1</td>
+    </tr>
+    <tr>
+      <td>tomli</td>
+      <td>2.0.1</td>
+    </tr>
+    <tr>
+      <td>toolz</td>
+      <td>0.12.0</td>
+    </tr>
+    <tr>
+      <td>tornado</td>
+      <td>6.3.2</td>
+    </tr>
+    <tr>
+      <td>tqdm</td>
+      <td>4.65.0</td>
+    </tr>
+    <tr>
+      <td>traitlets</td>
+      <td>5.9.0</td>
+    </tr>
+    <tr>
+      <td>traittypes</td>
+      <td>0.2.1</td>
+    </tr>
+    <tr>
+      <td>typing-extensions</td>
+      <td>4.5.0</td>
+    </tr>
+    <tr>
+      <td>typing-inspect</td>
+      <td>0.9.0</td>
+    </tr>
+    <tr>
+      <td>tzcode</td>
+      <td>2023c</td>
+    </tr>
+    <tr>
+      <td>tzdata</td>
+      <td>2023.3</td>
+    </tr>
+    <tr>
+      <td>uri-template</td>
+      <td>1.3.0</td>
+    </tr>
+    <tr>
+      <td>urllib3</td>
+      <td>1.26.7</td>
+    </tr>
+    <tr>
+      <td>wcwidth</td>
+      <td>0.2.6</td>
+    </tr>
+    <tr>
+      <td>webcolors</td>
+      <td>1.13</td>
+    </tr>
+    <tr>
+      <td>webencodings</td>
+      <td>0.5.1</td>
+    </tr>
+    <tr>
+      <td>websocket-client</td>
+      <td>1.6.1</td>
+    </tr>
+    <tr>
+      <td>wheel</td>
+      <td>0.37.0</td>
+    </tr>
+    <tr>
+      <td>widgetsnbextension</td>
+      <td>4.0.8</td>
+    </tr>
+    <tr>
+      <td>wrapt</td>
+      <td>1.15.0</td>
+    </tr>
+    <tr>
+      <td>xarray</td>
+      <td>2023.5.0</td>
+    </tr>
+    <tr>
+      <td>xerces-c</td>
+      <td>3.2.3</td>
+    </tr>
+    <tr>
+      <td>xorg-kbproto</td>
+      <td>1.0.7</td>
+    </tr>
+    <tr>
+      <td>xorg-libice</td>
+      <td>1.1.1</td>
+    </tr>
+    <tr>
+      <td>xorg-libsm</td>
+      <td>1.2.4</td>
+    </tr>
+    <tr>
+      <td>xorg-libx11</td>
+      <td>1.8.6</td>
+    </tr>
+    <tr>
+      <td>xorg-libxau</td>
+      <td>1.0.11</td>
+    </tr>
+    <tr>
+      <td>xorg-libxdmcp</td>
+      <td>1.1.3</td>
+    </tr>
+    <tr>
+      <td>xorg-libxext</td>
+      <td>1.3.4</td>
+    </tr>
+    <tr>
+      <td>xorg-libxrender</td>
+      <td>0.9.11</td>
+    </tr>
+    <tr>
+      <td>xorg-renderproto</td>
+      <td>0.11.1</td>
+    </tr>
+    <tr>
+      <td>xorg-xextproto</td>
+      <td>7.3.0</td>
+    </tr>
+    <tr>
+      <td>xorg-xproto</td>
+      <td>7.0.31</td>
+    </tr>
+    <tr>
+      <td>xyzservices</td>
+      <td>2023.7.0</td>
+    </tr>
+    <tr>
+      <td>xz</td>
+      <td>5.2.5</td>
+    </tr>
+    <tr>
+      <td>y-py</td>
+      <td>0.5.9</td>
+    </tr>
+    <tr>
+      <td>yaml</td>
+      <td>0.2.5</td>
+    </tr>
+    <tr>
+      <td>yarl</td>
+      <td>1.9.2</td>
+    </tr>
+    <tr>
+      <td>ypy-websocket</td>
+      <td>0.8.2</td>
+    </tr>
+    <tr>
+      <td>zeromq</td>
+      <td>4.3.4</td>
+    </tr>
+    <tr>
+      <td>zict</td>
+      <td>3.0.0</td>
+    </tr>
+    <tr>
+      <td>zipp</td>
+      <td>3.16.1</td>
+    </tr>
+    <tr>
+      <td>zlib</td>
+      <td>1.2.11</td>
+    </tr>
+    <tr>
+      <td>zope-interface</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td>zstandard</td>
+      <td>0.21.0</td>
+    </tr>
+    <tr>
+      <td>zstd</td>
+      <td>1.5.0</td>
+    </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong></strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 VMASC Virginia Data Cube. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
