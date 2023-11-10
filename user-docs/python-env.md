@@ -6,9 +6,10 @@ sidebar:
 ---
 
 
-The following is a list of python packages that are currently installed on the Data Cube. Users have the ability to utiilize this, create their own conda environment, or [install python packages local](/user-docs/install-py-packages) to their user on the Data Cube.
+The following is a list of python packages that are currently installed on the Data Cube. Users have the ability to utilize this, create their own conda environment, or [install python packages local](/user-docs/install-py-packages) to their user on the Data Cube.
 
 ## Packages
+
 
 | name                  | version  |
 |-----------------------|----------|
@@ -50,6 +51,7 @@ The following is a list of python packages that are currently installed on the D
 | cairo                 | 1.16.0   |
 | cattrs                | 23.1.2   |
 | cenpy                 | 1.0.1    |
+| census                | 0.8.20   |
 | certifi               | 2023.7.22|
 | certipy               | 0.1.3    |
 | cffi                  | 1.14.6   |
@@ -310,7 +312,9 @@ The following is a list of python packages that are currently installed on the D
 | pycosat                 | 0.6.3        |
 | pycparser               | 2.20         |
 | pydantic                | 1.10.11      |
-| pygments                | 2.15.1       |
+| pygeoda                 | 1.10.11      |
+| pygments                | 0.0.8.post1  |
+| pygris                  | 0.1.6        |
 | pyopenssl               | 21.0.0       |
 | pyparsing               | 3.0.9        |
 | pyproj                  | 3.5.0        |
@@ -395,6 +399,7 @@ The following is a list of python packages that are currently installed on the D
 | tzdata              | 2023.3     |
 | uri-template        | 1.3.0      |
 | urllib3             | 1.26.7     |
+| us                  | 3.1.1      |
 | wcwidth             | 0.2.6      |
 | webcolors           | 1.13       |
 | webencodings        | 0.5.1      |
