@@ -313,8 +313,8 @@ The following is a list of python packages that are currently installed on the D
 | pycparser               | 2.20         |
 | pydantic                | 1.10.11      |
 | pygeoda                 | 1.10.11      |
-| pygments                | 0.0.8.post1  |
-| pygris                  | 0.1.6        |
+| pygments                | 2.15.1       |
+| pygris                  | 0.0.8.post1  |
 | pyopenssl               | 21.0.0       |
 | pyparsing               | 3.0.9        |
 | pyproj                  | 3.5.0        |
