@@ -48,4 +48,4 @@ Within the products on the Data Cube are thousands of datasets ready to be analy
 * nasadem
     * Number of datasets : 14520
 * s2_l2a
-    * Number of datasets : 27232
+    * Number of datasets : 68673
