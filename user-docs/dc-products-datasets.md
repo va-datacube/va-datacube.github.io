@@ -47,13 +47,21 @@ Within the products on the Data Cube are thousands of datasets ready to be analy
 * io_lulc
     * Number of datasets : 728
 * ls7_c2l2_sr
-    * Number of datasets : 5872
+    * Number of datasets : 5,872
 * ls8_c2l2_sr
-    * Number of datasets : 5850
+    * Number of datasets : 5,850
+* ls5_c2l2_st
+    * Number of datasets : 12,107
+* ls7_c2l2_st
+    * Number of datasets : 14,746
+* ls8_c2l2_st
+    * Number of datasets : 6,688
+* ls9_c2l2_st
+    * Number of datasets : 1,439
 * nasadem
-    * Number of datasets : 14520
+    * Number of datasets : 14,520
 * s2_l2a
-    * Number of datasets : 68673
+    * Number of datasets : 68,673
 * usgs_nlcd
     * Number of datasets : 7
       * Years 2001, 2004, 2006, 2008, 2011, 2013, and 2016
