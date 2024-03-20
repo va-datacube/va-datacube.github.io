@@ -63,5 +63,5 @@ Within the products on the Data Cube are thousands of datasets ready to be analy
 * s2_l2a
     * Number of datasets : 68,673
 * usgs_nlcd
-    * Number of datasets : 7
-      * Years 2001, 2004, 2006, 2008, 2011, 2013, and 2016
+    * Number of datasets : 8
+      * Years 2001, 2004, 2006, 2008, 2011, 2013, 2016, 2019, and 2021
