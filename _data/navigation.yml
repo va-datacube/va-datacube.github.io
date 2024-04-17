@@ -24,9 +24,15 @@ docs:
         url: user-docs/install-py-packages
       - title: "Jupyter AI"
         url: user-docs/jupyter-ai-magic
+      - title: "Configure AWS Access"
+        url: user-docs/aws-access
   - title: Open Data Cube Resources
     children:
       - title: "Python API \u2197"
         url: https://datacube-core.readthedocs.io/en/latest/api/index.html
       - title: "ODC Jupyter Notebook Examples \u2197"
         url: https://datacube-core.readthedocs.io/en/latest/data-access-analysis/tools-exploring-data/using-juypter.html
+  - title: FAQ
+    children:
+      - title: "RasterioIOError: Access Denied"
+        url: user-docs/access-denied
