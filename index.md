@@ -23,7 +23,7 @@ feature_row:
   - image_path: images/jupyter-logo.png
     title: "Data Cube Jupyter Notebook Documentation"
     excerpt: "Find templates, tutorials, and getting started guides for jupyter notebooks within the Data Cube."
-    url: "https://github.com/GeoSEA-ODU/va-datacube"
+    url: "https://github.com/ODU-GeoSEA/va-datacube"
     btn_label: "Go To"
     btn_class: "btn--primary"
 feature_row5:
