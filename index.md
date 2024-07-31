@@ -43,8 +43,8 @@ feature_row7:
   - image_path: images/NASA-Logo.png
     alt: "sat"
     title: "Supported by NASA AIST-21 grant 'Pixels for Public Health'"
-    excerpt: "Along with supporting the VMASC Virginia Open Data Cube, the 'Pixels for Public Health' grant is developng digital twin technologies for building healthy, resilient, and equitable communities. You can find out more about the initiative at the link below."
-    url: "https://pixels-for-public-health-digital-twin-odu-gis.hub.arcgis.com"
+    excerpt: "Along with supporting the VMASC Virginia Open Data Cube, the 'Pixels for Public Health' grant is developng digital twin technologies for building healthy, resilient, and equitable communities. You can find more about the initiative and the Virginia Coastal Resilience Hub at the link below."
+    url: "https://vacores-odu-gis.hub.arcgis.com/"
     btn_label: "Read more"
     btn_class: "btn--primary"
 feature_row8:
@@ -61,8 +61,6 @@ feature_row8:
 
 <h1 style="text-align:center">Welcome to the VMASC Virginia Open Data Cube Hub!</h1>
 
-
-> **Important Note:** Users who created an account before August 2023 will have to sign-up again due to infrastructure changes. If you have data or notebooks on your previous account that wish to transfer, please email **datacube@odu.edu**
   
 
 <p style="text-align:center">
