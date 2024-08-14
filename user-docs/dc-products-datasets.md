@@ -35,7 +35,7 @@ Products are a collection of datasets that share the same set of measurements an
       * Sentinel-2 refers to an Earth observation mission operated by the European Space Agency. Observation is currently conducted through two satellites, Sentinel-2a (s2a) and Sentinel-2b (s2b). The s2a satellite was launched on June 23rd, 2015, and the s2b satellite was launched on March 7th, 2017.
       * Both satellites measure from the same Multi-Spectral Imager, which collects data from 12 bands. These bands are within the visible, near infrared, shortwave infrared wavelengths.
 
-* usgs_nlcd
+* usgs_nlcd_*
     * [MRLC NLCD Data](https://www.mrlc.gov/data)
       * The National Land Cover Database (NLCD) provides nationwide data on land cover and land cover change at a 30m resolution with a 16-class legend based on a modified Anderson Level II classification system. NLCD 2021 represents the latest evolution of NLCD land cover products focused on providing innovative land cover and land cover change data for the Nation.
       * NLCD 2021 offers 9 integrated epochs of land cover for years 2001, 2004, 2006, 2008, 2011, 2013, 2016, 2019, and 2021. chs (2001 – 2021) and are directly comparable across the full time series and suitable for multi-temporal analysis.
@@ -63,5 +63,11 @@ Within the products on the Data Cube are thousands of datasets ready to be analy
 * s2_l2a
     * Number of datasets : 68,673
 * usgs_nlcd
-    * Number of datasets : 8
+    * Number of datasets : 9
       * Years 2001, 2004, 2006, 2008, 2011, 2013, 2016, 2019, and 2021
+* usgs_nlcd_imp
+    * Number of datasets : 9
+      * Years 2001, 2004, 2006, 2008, 2011, 2013, 2016, 2019, and 2021
+* usgs_nlcd_tcc
+    * Number of datasets : 8
+      * Years 2011, 2013, 2014, 2016, 2017, 2019, 2020, and 2021
